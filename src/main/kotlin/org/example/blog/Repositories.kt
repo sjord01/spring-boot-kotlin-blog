@@ -2,7 +2,7 @@ package org.example.blog
 
 import org.springframework.data.repository.CrudRepository
 
-// these are Sorting data JPA repos
+// these are Soring data JPA repos
 
 interface ArticleRepository : CrudRepository<Article, Long> {
     fun findBySlug(slug: String): Article?
